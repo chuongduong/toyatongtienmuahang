@@ -27,9 +27,14 @@ tongtienmuahang(1000000)                | 1100000
 tongtienmuahang(gia_truoc_thue=1000000) | 1100000
 tongtienmuahang(None)                   | None
 """
-#endregion debai
 
-#region bailam
 def tongtienmuahang(gia_truoc_thue):
-  return 'TODO'
-#endregion bailam
+  if gia_truoc_thue is None:
+    return None
+  tien_thue = int(gia_truoc_thue * 0.1)
+  tong_tien = gia_truoc_thue + tien_thue
+  return tong_tien
+  print(tongtienmuahang(1000000))
+  print(tongtienmuahang(gia_truoc_thue=1000000))  
+  print(tongtienmuahang(None))
+
